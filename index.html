@@ -2,14 +2,203 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>موقعي الشخصي</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal blog - Hadeel Rami Abo Mandel</title>
     <style>
-        body { background-color: #121212; color: #ffffff; font-family: Tahoma, sans-serif; text-align: center; padding-top: 100px; }
-        h1 { color: #4CAF50; }
+        :root {
+            --bg-color: #f0f4f8;
+            --card-bg: #ffffff;
+            --primary-color: #1a5276;
+            --text-color: #333333;
+            --border-color: #2980b9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: right;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .welcome-title {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin: 10px 0;
+        }
+
+        .name-title {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .card-title {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .blog-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            color: #666;
+            margin: 30px 0;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
-    <h1>أهلاً بكم في موقعي الشخصي!</h1>
-    <p>أنا طالبة تكنولوجيا وابتكار خطواتي الأولى في عالم تطوير وتصميم الويب.</p>
+
+    <header>
+        <nav>
+            <a href="#about">نبذة عني</a>
+            <a href="#skills">مهاراتي</a>
+            <a href="#projects">مشاريعي</a>
+            <a href="#contact">تواصل معي</a>
+        </nav>
+        <h1 class="welcome-title">مرحباً بك في مدونتي</h1>
+        <h2 class="name-title">Hadeel Rami Abo Mandel</h2>
+    </header>
+
+    <div class="container">
+        
+        <!-- قسم الصورة والترحيب -->
+        <div class="card">
+            <img src="your-image-link.jpg" alt="مكتب العمل" class="blog-image">
+            <div style="text-align: left;">
+                <a href="#about" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">نبذة عني</a>
+            </div>
+        </div>
+
+        <!-- قسم نبذة عني (التفاصيل) -->
+        <div class="card" id="about">
+            <h3 class="card-title">نبذة عني</h3>
+            <p>أهلاً بكم جميعاً! أنا طالبة تكنولوجيا معلومات أخطو خطواتي الأولى في عالم تطوير الويب وتصميم التكنولوجيا. أسعى لبناء مشاريع رقمية مميزة، وأحب دائماً تنظيم أفكاري واستكشاف كل ما هو جديد ومبتكر في هذا المجال. هذه المدونة هي نافذتي الأولى لتوثيق رحلتي ومشاركتكم شغفي[span_0](start_span)[span_0](end_span)!</p>
+        </div>
+
+        <!-- قسم مهاراتي -->
+        <div class="card" id="skills">
+            <h3 class="card-title">مهاراتي</h3>
+            <ul>
+                <li>💻 أساسيات تطوير الويب (HTML, CSS)[span_1](start_span)[span_1](end_span)</li>
+                <li>📚 دراسة تقنية المعلومات وتكنولوجيا الحوسبة[span_2](start_span)[span_2](end_span)</li>
+                <li>🧠 بناء الخرائط الذهنية وتنظيم الأفكار (GitMind)[span_3](start_span)[span_3](end_span)</li>
+                <li>🎨 تصميم العروض والوسائط التعليمية[span_4](start_span)[span_4](end_span)</li>
+            </ul>
+        </div>
+
+        <!-- قسم أبرز الأدوات والمنصات -->
+        <div class="card">
+            <h3 class="card-title">أبرز الأدوات والمنصات</h3>
+            <ul>
+                <li>💻 تطبيق Spck Editor: لتطوير وكتابة الأكواد البرمجية على الهاتف[span_5](start_span)[span_5](end_span).</li>
+                <li>📄 مستندات Google: لتنسيق وكتابة التقارير والملفات الأكاديمية[span_6](start_span)[span_6](end_span).</li>
+                <li>📊 برنامج GitMind: لبناء الخرائط الذهنية وتنظيم الأفكار الهندسية[span_7](start_span)[span_7](end_span).</li>
+                <li>🎨 منصة Canva: لتصميم الواجهات والرسومات الإبداعية[span_8](start_span)[span_8](end_span).</li>
+            </ul>
+        </div>
+
+        <!-- قسم مشاريعي -->
+        <div class="card" id="projects">
+            <h3 class="card-title">مشاريعي</h3>
+            <ul>
+                <li>🚀 مدونتي الشخصية الأولى (HTML, CSS)[span_9](start_span)[span_9](end_span)</li>
+                <li>💡 مشروع القصة الرقمية التفاعلية[span_10](start_span)[span_10](end_span)</li>
+            </ul>
+        </div>
+
+        <!-- قسم مشاريع قيد العمل -->
+        <div class="card">
+            <h3 class="card-title">مشاريع قيد العمل</h3>
+            <ul>
+                <li>🌐 مدونتي التكنولوجية: موقع شخصي على ووردبريس لنشر المقالات التقنية[span_11](start_span)[span_11](end_span).</li>
+                <li>📊 منصة Hadeel Creative Hub: تنظيم اللوحات والعروض التسويقية عبر منصة Pinterest[span_12](start_span)[span_12](end_span).</li>
+                <li>💻 تطبيقات ويب تفاعلية: تمارين عملية باستخدام لغات Front-End وتصميم الواجهات[span_13](start_span)[span_13](end_span).</li>
+            </ul>
+        </div>
+
+        <!-- قسم تواصل معي -->
+        <div class="card" id="contact">
+            <h3 class="card-title">تواصل معي</h3>
+            <p>سعيدة بزيارتكم لمدونتي! يمكنكم التواصل معي عبر البريد الإلكتروني أو متابعة مشاريعي التكنولوجية[span_14](start_span)[span_14](end_span).</p>
+        </div>
+
+        <!-- قسم نصائح تكنولوجية سريعة -->
+        <div class="card">
+            <h3 class="card-title">نصائح تكنولوجية سريعة</h3>
+            <ul>
+                <li>💡 التنظيم أساس البرمجة: احرصي دائماً على ترتيب الأكواد واستخدام المسافات لسهولة القراءة والصيانة[span_15](start_span)[span_15](end_span).</li>
+                <li>🚀 التجربة المستمرة: التطبيق العملي وكتابة الأكواد يثبت المعلومة أسرع بكثير من القراءة النظرية[span_16](start_span)[span_16](end_span).</li>
+                <li>🔄 النسخ الاحتياطي: احتفظي دائماً بننسخة من ملفاتك لضمان عدم ضياع أي تعديل مهم أثناء التطوير[span_17](start_span)[span_17](end_span).</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Hadeel Abo Mandel</p>
+    </footer>
+
 </body>
-</html>
+    </html>
+    
